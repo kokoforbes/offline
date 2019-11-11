@@ -1,0 +1,15 @@
+{
+  "name": "monaca-pwa-template-minimum",
+  "version": "2.0.4",
+  "displayName": "Monaca PWA Template Minimum",
+  "dependencies": {},
+  "scripts": {
+    "monaca:preview": "npm run build && npm run dev",
+    "monaca:transpile": "npm run build",
+    "build": "workbox injectManifest workbox-config.js",
+    "dev": "browser-sync start --no-open -s www/ --watch --port 8080 --ui-port 8081"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
